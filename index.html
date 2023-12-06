@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Interns</title>
+    <link rel="stylesheet" crossorigin href="/random-intern-generator/assets/index-W2vWmCHT.css">
+  </head>
+  <body class="sm:bg-fuchsia-200 bg-white">
+    <header class="bg-blue-950 text-white py-5 w-full">
+      <h1 class="mx-auto text-xl font-semibold text-center">
+        Generate Random Interns🧑‍💻
+      </h1>
+    </header>
+    <main class="bg-white max-w-lg mx-auto my-12 px-5 py-8 rounded-lg">
+      <!-- profile card -->
+      <div
+        class="bg-blue-950 p-10 max-w-sm mx-auto rounded-md text-white"
+        id="profile-card"
+      >
+        <img
+          class="w-32 rounded-full mx-auto"
+          src="data:image/png;base64,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"
+          alt=""
+        />
+        <!-- details -->
+        <div class="my-2 mx-auto flex flex-col items-center justify-center">
+          <h3 class="text-center text-lg font-semibold">Random Intern</h3>
+          <!-- buttons -->
+          <div class="my-3 space-x-1 mx-auto">
+            <!-- github -->
+            <button class="bg-green-800 px-2 py-0.5 rounded-sm">
+              <a href="#">Github</a>
+            </button>
+            <!-- linkedin -->
+            <button class="bg-blue-400 px-2 py-0.5 rounded-sm">
+              <a href="#">Linkedin</a>
+            </button>
+            <!-- task -->
+            <button class="bg-green-500 px-2 py-0.5 rounded-sm">
+              <a href="#">Tasks</a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- SEPRATE BY -->
+      <div class="mx-auto mt-5 flex items-center justify-center gap-3">
+        <div>
+          <input
+            class="option"
+            type="radio"
+            name="gender"
+            value="all"
+            checked
+          />
+          <label for="male">All</label>
+        </div>
+        <div>
+          <input class="option" type="radio" name="gender" value="male" />
+          <label for="male">Male</label>
+        </div>
+        <div>
+          <input class="option" type="radio" name="gender" value="female" />
+          <label for="female">Female</label>
+        </div>
+      </div>
+      <div class="mx-auto flex items-center justify-center mt-5">
+        <button
+          id="generateRandom"
+          class="bg-violet-900 text-white font-semibold px-4 py-2 rounded-md"
+        >
+          Generate Random
+        </button>
+      </div>
+    </main>
+    <script src="public/js/app.js"></script>
+  </body>
+</html>
