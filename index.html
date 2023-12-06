@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Interns</title>
+    <link rel="stylesheet" href="public/css/main.css" />
+  </head>
+  <body class="sm:bg-fuchsia-200 bg-white">
+    <header class="bg-blue-950 text-white py-5 w-full">
+      <h1 class="mx-auto text-xl font-semibold text-center">
+        Generate Random Interns🧑‍💻
+      </h1>
+    </header>
+    <main class="bg-white max-w-lg mx-auto my-12 px-5 py-8 rounded-lg">
+      <!-- profile card -->
+      <div
+        class="bg-blue-950 p-10 max-w-sm mx-auto rounded-md text-white"
+        id="profile-card"
+      >
+        <img
+          class="w-32 rounded-full mx-auto"
+          src="public/img/random.png"
+          alt=""
+        />
+        <!-- details -->
+        <div class="my-2 mx-auto flex flex-col items-center justify-center">
+          <h3 class="text-center text-lg font-semibold">Random Intern</h3>
+          <!-- buttons -->
+          <div class="my-3 space-x-1 mx-auto">
+            <!-- github -->
+            <button class="bg-green-800 px-2 py-0.5 rounded-sm">
+              <a href="#">Github</a>
+            </button>
+            <!-- linkedin -->
+            <button class="bg-blue-400 px-2 py-0.5 rounded-sm">
+              <a href="#">Linkedin</a>
+            </button>
+            <!-- task -->
+            <button class="bg-green-500 px-2 py-0.5 rounded-sm">
+              <a href="#">Tasks</a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- SEPRATE BY -->
+      <div class="mx-auto mt-5 flex items-center justify-center gap-3">
+        <div>
+          <input
+            class="option"
+            type="radio"
+            name="gender"
+            value="all"
+            checked
+          />
+          <label for="male">All</label>
+        </div>
+        <div>
+          <input class="option" type="radio" name="gender" value="male" />
+          <label for="male">Male</label>
+        </div>
+        <div>
+          <input class="option" type="radio" name="gender" value="female" />
+          <label for="female">Female</label>
+        </div>
+      </div>
+      <div class="mx-auto flex items-center justify-center mt-5">
+        <button
+          id="generateRandom"
+          class="bg-violet-900 text-white font-semibold px-4 py-2 rounded-md"
+        >
+          Generate Random
+        </button>
+      </div>
+    </main>
+    <script src="public/js/app.js"></script>
+  </body>
+</html>
